@@ -3,7 +3,7 @@ function Header({ setOnHome, setOnAbout }) {
     <nav className="bg-black flex items-center px-6">
       <div className="flex w-1/3 items-center">
         <div className="flex items-center space-x-2">
-          <img src="src\assets\react.svg" alt="Logo" className="h-8 w-8" />
+          <img src="/react.svg" alt="Logo" className="h-8 w-8" />
           <span className="text-white font-bold text-xl">Meeting Sync</span>
         </div>
       </div>
@@ -51,15 +51,15 @@ function Header({ setOnHome, setOnAbout }) {
         <div className="flex space-x-4  w-1/3">
           <button>
             <img
-              src="src\assets\58479337-832e-4854-b00b-c6ecc19413ac.png"
-              alt="Sign In"
+              src="/58479337-832e-4854-b00b-c6ecc19413ac.png"
+              alt="Sign Up"
               className="h-full"
             />
           </button>
           <button>
             <img
-              src="src\assets\58479337-832e-4854-b00b-c6ecc19413ac.png"
-              alt="Sign Up"
+              src="public\5b5669f7-f4be-452d-9e32-895d23bd0856.png"
+              alt="Sign IN"
               className="h-full"
             />
           </button>

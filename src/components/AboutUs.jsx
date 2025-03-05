@@ -42,7 +42,7 @@ const AboutUs = () => {
         </div>
         <div className=" flex justify-center">
           <img
-            src="src\assets\Tech2.png"
+            src="/Tech2.png"
             className="p-5 relative top-1/6 border-none rounded-sm overflow-hidden h-1/2"
             alt=""
           />

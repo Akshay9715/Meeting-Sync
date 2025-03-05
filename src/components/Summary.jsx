@@ -3,7 +3,6 @@ import { useState } from "react";
 const Summarizer = ({ translatedText }) => {
   const hfToken = import.meta.env.VITE_HF_TOKEN;
   const formatSummary = (text) => {
-    checkSummary(text);
     if (!text) return [];
 
     const regex = /\*\*(.*?)\*\*:(.*?)(?=(\*\*|$))/gs;
@@ -30,16 +29,6 @@ const Summarizer = ({ translatedText }) => {
     formatSummary2(result);
     return result;
   };
-
-  function checkSummary(input) {
-    if (input == "Again") {
-      setTimeout(() => summarizeText(translatedText), 2000);
-      summarizeText(translatedText);
-      checkSummary(input);
-    } else {
-      return translatedText;
-    }
-  }
 
   const formatSummary2 = (list) => {
     let result2 = {};
@@ -87,11 +76,11 @@ const Summarizer = ({ translatedText }) => {
       }
     } catch (err) {
       setLoading(true);
-      setSummary("Again");
-      console.log(err);
+      setSummary("Server is too busy Click");
     }
 
     setLoading(false);
+    s;
   }
 
   return (
