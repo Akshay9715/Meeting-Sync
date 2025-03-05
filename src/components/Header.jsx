@@ -57,11 +57,7 @@ function Header({ setOnHome, setOnAbout }) {
             />
           </button>
           <button>
-            <img
-              src="public\5b5669f7-f4be-452d-9e32-895d23bd0856.png"
-              alt="Sign IN"
-              className="h-full"
-            />
+            <img src="\signin.png" alt="Sign IN" className="h-full" />
           </button>
         </div>
       </div>
